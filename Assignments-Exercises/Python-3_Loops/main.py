@@ -1,33 +1,39 @@
-# Loops – For and While Assignment
+fave_foods = ["Takoyaki", "Omelette", "Ferrero Rocher", "Ice cream", "Spinach Pizza",
+              "Sushi", "Spring rolls", "Beef steak", "Eggs", "Skewered foods"]
 
-# Part 1: For Loop - Printing a list of favorite foods
-# Let's create a list of some favorite foods
-favorite_foods = ['Pizza', 'Burger', 'Ice Cream', 'Pasta', 'Sushi']
+# Iterating through the list using for loop.   
+for i in range(len(fave_foods)):
 
-# Using a for loop to print each food in the list
-print("Here are my favorite foods:")
-for food in favorite_foods:
-    print(f"- {food}")  # Print each food item with a bullet point
+                     # i = index number which increments each loop.
+                         # 1 = tells the program to start at 1, then increment each loop.
 
-print("\n")  # Add a blank line to separate the outputs of the two parts
+                          # The item number is based on the number which increments each turn.  
+    
+    print(f"Fave food {i + 1}: {fave_foods[i]}")
 
-# Part 2: While Loop - Countdown from a number
-# Ask the user to enter a starting number for the countdown
+
 try:
-    starting_number = int(input("Enter a positive number to start the countdown: "))
+    # Countdown using while loop.
 
-    # Check if the number is positive
-    if starting_number <= 0:
-        print("Invalid input: Please enter a number greater than zero.")
-    else:
-        print("Countdown:")
-        # Use a while loop to count down from the starting number to 1
-        while starting_number > 0:
-            print(starting_number)  # Print the current number
-            starting_number -= 1   # Reduce the number by 1 for the next step
+    start_num = int(input("\nEnter starting number (e.g. 20): "))
 
-        print("Countdown complete!")  # Message when the countdown ends
+    print("")
 
-# Handle invalid inputs (e.g., if the user enters a non-number)
-except ValueError:
-    print("Invalid input: Please enter a valid number.")
+    if start_num <= 0:
+        raise ValueError("Number must be a positive integer that is 1 or higher.")
+    
+    # For Looping Decrementation.
+    i = 1
+
+    while start_num >= i:
+        print(start_num)
+
+        start_num -= 1
+
+        # Prints out if the countdown is down to "1"
+        if start_num == 0:
+            print("Countdown complete!")
+
+except ValueError as e:
+    print(e)
+    print("Invalid input: Please enter a positive integer.")
