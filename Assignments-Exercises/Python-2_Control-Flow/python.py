@@ -1,6 +1,3 @@
-# This program checks the age and categorizes the person into different age groups.
-# It also demonstrates exception handling using try and except.
-
 try:
 
     age = int(input("Please, enter your age: "))
