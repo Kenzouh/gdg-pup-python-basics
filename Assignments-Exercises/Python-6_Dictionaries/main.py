@@ -1,15 +1,41 @@
-# Step 1: Create a dictionary
-my_dict = {'name': 'Sparky', 'age': 25}
-print("Original dictionary:", my_dict)
+# NOTE: I made main2.py for practicing on my own with my own dictionary.
 
-# Step 2: Add a new key-value pair
-my_dict['city'] = 'New York'
-print("Dictionary after adding an item:", my_dict)
+# Creating a dictionary
 
-# Step 3: Update an existing key-value pair
-my_dict['age'] = 26
-print("Dictionary after updating an item:", my_dict)
+    # name: Sparky, age: 25
 
-# Step 4: Remove a key-value pair
-del my_dict['age']
-print("Dictionary after removing an item:", my_dict)
+gdg_dictionary = {
+                    "name": "Sparky", 
+                    "age": 25
+                 }
+
+print("gdg_dictionary:\n", gdg_dictionary)
+
+# Add new key-value pair
+    
+    # city: "New York"
+gdg_dictionary.update({"city": "New York"})
+
+print("\nAdded city: New York:\n", gdg_dictionary)
+
+
+
+# Update an existing key-value pair
+
+    # update age to 26
+gdg_dictionary.update({"age": 26})
+
+print("\nUpdated age:\n", gdg_dictionary)
+
+# Removing a key-value pair
+
+    #del or pop()
+    # Remove the age key  
+
+gdg_dictionary.pop("age")
+print("\nDeleted age key:\n", gdg_dictionary)
+
+# Display the dictionary
+
+print("\nFinal output:")
+print(gdg_dictionary)
