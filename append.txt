@@ -1,0 +1,21 @@
+This file is for appending practices.
+
+"a" method: I updated the file using the append function.
+
+With Python, coding is limitless!
+
+"a" method: I updated the file using the append function.
+
+With Python, coding is limitless!
+
+"a" method: I updated the file using the append function.
+
+With Python, coding is limitless!
+
+"a" method: I updated the file using the append function.
+
+With Python, coding is limitless!
+
+"a" method: I updated the file using the append function.
+
+With Python, coding is limitless!
