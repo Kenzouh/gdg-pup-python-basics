@@ -58,20 +58,3 @@ print(f.read())
 
 # Creates a file
 # f = open("sample.txt", "x")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
