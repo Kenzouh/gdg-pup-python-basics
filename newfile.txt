@@ -1,0 +1,4 @@
+"w" method: I wrote this file using Python's write method (w).
+
+I'm really grateful for the knowledge I learned in GDG club!
+Thank you for teaching me Python file handling!
